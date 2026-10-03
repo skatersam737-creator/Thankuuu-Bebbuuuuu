@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>THANK YOU BEBUUU ❤️</title>
+<style>
+*{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;background:#070513;color:#fff;font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif;overflow:hidden}
+button{font:inherit}
+#app{position:relative;width:100vw;height:100vh;overflow:hidden}
+.scene{position:absolute;inset:0;display:none;overflow:hidden}
+.scene.active{display:block}
+.noise{position:absolute;inset:0;opacity:.08;pointer-events:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.35'/%3E%3C/svg%3E")}
+.hidden{display:none!important}
+.center{display:grid;place-items:center;height:100%;padding:24px;text-align:center}
+.kicker{letter-spacing:.28em;text-transform:uppercase;font-size:12px;opacity:.7}
+.big{font-size:clamp(42px,9vw,105px);line-height:.9;font-weight:950;letter-spacing:-.06em}
+.sub{font-size:clamp(15px,2vw,22px);opacity:.78;max-width:700px;line-height:1.5}
+.cta{border:0;border-radius:999px;padding:14px 22px;background:#fff;color:#160c24;font-weight:900;cursor:pointer;box-shadow:0 12px 40px #ff4fba44;transition:.2s;z-index:20}
+.cta:hover{transform:translateY(-3px) scale(1.03)}
+.smallbtn{position:fixed;right:16px;top:16px;z-index:100;border:1px solid #ffffff22;background:#ffffff10;color:#fff;border-radius:999px;padding:8px 12px;backdrop-filter:blur(12px);cursor:pointer}
+#s0{background:radial-gradient(circle at 50% 45%,#26113d,#070513 62%)}
+.titleWrap{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);z-index:10;width:min(900px,92vw)}
+#introText{opacity:0;transform:translateY(20px);transition:1s}
+#introText.show{opacity:1;transform:none}
+.cock{position:absolute;font-size:48px;filter:drop-shadow(0 12px 12px #000);animation:scuttle var(--t) linear infinite;z-index:5}
+.c1{left:-80px;top:25%;--t:5s}.c2{left:105%;top:62%;--t:6.5s;animation-delay:1s}.c3{left:35%;top:110%;--t:4.5s;animation-delay:2s}.c4{left:72%;top:-80px;--t:7s;animation-delay:.7s}
+@keyframes scuttle{to{transform:translate(120vw,25vh) rotate(720deg)}}
+#cat{position:absolute;left:50%;bottom:14%;transform:translateX(-50%);font-size:110px;z-index:8;animation:catIdle 1.4s ease-in-out infinite}
+@keyframes catIdle{50%{transform:translateX(-50%) translateY(-12px) rotate(-2deg)}}
+.shake{animation:shake .38s linear!important}@keyframes shake{20%{transform:translate(-8px,4px)}40%{transform:translate(8px,-4px)}60%{transform:translate(-6px,-2px)}80%{transform:translate(5px,3px)}}
+#s1{background:linear-gradient(180deg,#100b22,#271039)}
+.room{position:absolute;inset:0;background:linear-gradient(#181126 0 60%,#3a2031 60%);perspective:900px}
+.floor{position:absolute;left:-10%;right:-10%;bottom:-20%;height:48%;background:repeating-linear-gradient(90deg,#4b293c 0 70px,#3c2232 70px 140px);transform:rotateX(60deg)}
+.window{position:absolute;left:8%;top:12%;width:27%;height:32%;border:12px solid #291c3d;border-radius:20px;background:radial-gradient(circle at 60% 35%,#fff7c7,#7667c4 20%,#15152e 58%);box-shadow:0 0 80px #8f77ff55}
+.moon{position:absolute;right:15%;top:12%;font-size:58px}
+.bed{position:absolute;left:25%;bottom:25%;width:50%;height:18%;border-radius:30px 30px 15px 15px;background:#8b456e;box-shadow:0 30px 40px #0005}
+.pillow{position:absolute;left:7%;top:12%;width:24%;height:58%;background:#f3d6ec;border-radius:25px}
+.lamp{position:absolute;right:10%;bottom:28%;font-size:90px;cursor:pointer}
+.object{position:absolute;z-index:10;cursor:pointer;transition:.2s;user-select:none}.object:hover{transform:scale(1.15) rotate(-3deg)}
+#photoObj{left:10%;bottom:22%;font-size:55px}.gift{right:25%;bottom:24%;font-size:60px}.food{left:58%;bottom:25%;font-size:55px}.letterObj{right:8%;bottom:24%;font-size:60px}
+#s2{background:radial-gradient(circle at 50% 45%,#321d48,#0b0714 70%)}
+.gameTitle{position:absolute;top:7%;left:50%;transform:translateX(-50%);text-align:center;z-index:20}
+.tearArena{position:absolute;inset:0}.tear{position:absolute;font-size:26px;cursor:pointer;animation:fall 4s linear forwards;filter:drop-shadow(0 5px 10px #ff8fc755)}@keyframes fall{from{transform:translateY(-60px)}to{transform:translateY(110vh) rotate(220deg)}}
+.score{position:fixed;top:18px;left:18px;z-index:100;background:#ffffff12;border:1px solid #fff2;padding:9px 13px;border-radius:999px;backdrop-filter:blur(12px)}
+#s3{background:#0c0920}
+.track{position:absolute;left:0;right:0;bottom:36%;height:8px;background:#ff75c8;box-shadow:0 0 25px #ff75c8}
+.track:before,.track:after{content:"";position:absolute;width:24vw;height:90px;border:8px solid #ff75c8;border-radius:50%;top:-70px}.track:before{left:18vw;transform:rotate(8deg)}.track:after{right:10vw;transform:rotate(-10deg)}
+.cart{position:absolute;left:8%;bottom:34%;font-size:64px;z-index:5;transition:left 2s cubic-bezier(.2,.8,.2,1)}
+.boost{position:absolute;bottom:12%;left:50%;transform:translateX(-50%);padding:15px 25px}
+.rollerText{position:absolute;top:12%;left:50%;transform:translateX(-50%);text-align:center;width:90%;z-index:10}
+#s4{background:linear-gradient(#201432,#0d0712)}
+.foodArena{position:absolute;inset:0}.foodItem{position:absolute;font-size:48px;cursor:pointer;animation:foodfall var(--dur) linear forwards}@keyframes foodfall{to{transform:translateY(115vh) rotate(360deg)}}
+.foodCat{position:absolute;bottom:8%;left:50%;font-size:100px;transform:translateX(-50%);transition:left .2s;z-index:10}
+.moveHint{position:absolute;bottom:2%;left:50%;transform:translateX(-50%);opacity:.5}
+#s5{background:radial-gradient(circle at 50% 45%,#252044,#080611 72%)}
+.letter{width:min(780px,90vw);max-height:78vh;overflow:auto;padding:34px 28px;background:linear-gradient(135deg,#fffaf2,#f5e6d0);color:#332536;border-radius:24px;box-shadow:0 30px 100px #0008;position:relative}
+.letter h1{font-family:Georgia,serif;font-size:clamp(30px,5vw,54px);margin:0 0 20px}.letter p{font-family:Georgia,serif;font-size:18px;line-height:1.8}.sign{font-weight:900;font-size:20px}
+#s6{background:linear-gradient(#090612,#24143c)}
+.memoryCloud{position:absolute;inset:0}.mem{position:absolute;width:180px;height:220px;background:#fff;padding:10px 10px 30px;box-shadow:0 20px 40px #0008;transform:rotate(var(--r));transition:.3s;cursor:pointer}.mem:hover{transform:rotate(0) scale(1.08);z-index:30}.mem img{width:100%;height:100%;object-fit:cover}.mem span{position:absolute;bottom:5px;left:10px;color:#322536;font-weight:800;font-size:12px}
+#s7{background:radial-gradient(circle at 50% 45%,#391745,#08040e 68%)} 
+.hugWrap{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);text-align:center;z-index:20}.hugChars{font-size:130px;letter-spacing:30px;transition:.5s}.hugChars.hug{transform:scale(1.2);filter:drop-shadow(0 0 40px #ff76c8)}
+.conf{position:absolute;font-size:24px;animation:conf 4s linear forwards}@keyframes conf{to{transform:translateY(110vh) rotate(720deg);opacity:0}}
+#toast{position:fixed;left:50%;bottom:8%;transform:translateX(-50%) translateY(20px);background:#fff;color:#211329;padding:12px 18px;border-radius:999px;font-weight:850;opacity:0;z-index:1000;transition:.25s;pointer-events:none;max-width:90vw;text-align:center}
+#toast.on{opacity:1;transform:translateX(-50%)}
+.pulse{animation:pulse 1s infinite}@keyframes pulse{50%{transform:scale(1.06)}}
+@media(max-width:700px){.window{left:5%;width:38%}.bed{left:14%;width:70%}.lamp{font-size:60px}.mem{width:125px;height:155px}.hugChars{font-size:88px;letter-spacing:8px}.big{font-size:52px}}
+
+/* cute secret surprise */
+#surpriseOverlay{position:fixed;inset:0;z-index:9999;display:none;place-items:center;background:radial-gradient(circle at 50% 45%,#ffd8ebee,#9b6bd9ee 45%,#16091eee 90%);backdrop-filter:blur(12px);overflow:hidden}
+#surpriseOverlay.show{display:grid;animation:surpriseIn .65s ease}
+.surpriseCard{width:min(560px,88vw);padding:34px 26px 30px;text-align:center;background:#fffafc;color:#38243a;border-radius:34px;box-shadow:0 30px 100px #0008;position:relative;animation:cardPop .7s cubic-bezier(.2,1.4,.4,1)}
+.surpriseEmoji{font-size:74px;animation:bob 1.5s ease-in-out infinite}
+.surpriseCard h2{font-size:clamp(30px,7vw,52px);margin:8px 0 12px}
+.surpriseCard p{font-size:17px;line-height:1.65;margin:8px auto;max-width:470px}
+.secretLine{font-weight:900;font-size:20px!important;margin-top:18px!important}
+.miniHeart{position:absolute;font-size:25px;animation:floatHeart 3.5s ease-in forwards;pointer-events:none}
+@keyframes surpriseIn{from{opacity:0}to{opacity:1}}
+@keyframes cardPop{from{transform:scale(.65) rotate(-4deg);opacity:0}to{transform:none;opacity:1}}
+@keyframes bob{50%{transform:translateY(-10px) rotate(3deg)}}
+@keyframes floatHeart{from{transform:translateY(0) scale(.6) rotate(0);opacity:0}15%{opacity:1}to{transform:translateY(-100vh) scale(1.4) rotate(180deg);opacity:0}}
+</style>
+</head>
+<body>
+<div id="app">
+<button class="smallbtn" id="sound">🔊</button>
+<div id="s0" class="scene active">
+  <div class="noise"></div>
+  <div class="cock c1">🪳</div><div class="cock c2">🪳</div><div class="cock c3">🪳</div><div class="cock c4">🪳</div>
+  <div id="cat">🐱</div>
+  <div class="titleWrap">
+    <div id="introText">
+      <div class="kicker">classified • top secret • for one bebuuu</div>
+      <div class="big">THE<br>BE­BUUUVERSE</div>
+      <p class="sub">ek chhoti si thank-you duniya… sirf meri bebuuu ke liye. ❤️</p>
+      <button class="cta" onclick="startVerse()">OPEN MY THANK YOU →</button>
+    </div>
+  </div>
+</div>
+
+<div id="s1" class="scene">
+  <div class="room">
+    <div class="window"></div><div class="moon">🌙</div><div class="bed"><div class="pillow"></div></div><div class="floor"></div>
+    <div class="lamp object" onclick="toast('raat ko masti karenge 😭❤️')">💡</div>
+    <div id="photoObj" class="object" onclick="toast('mera choomuda… jaida hi pyri lagti h 🥹❤️')">📸</div>
+    <div class="gift object" onclick="toast('arre isko khol dukkarr 😭🎁')">🎁</div>
+    <div class="food object" onclick="go(4);spawnFood()">🍜</div>
+    <div class="letterObj object" onclick="go(5)">💌</div>
+    <div class="object" style="left:43%;top:15%;font-size:48px" onclick="toast('✨ ab thoda pyaara lagra h')">✨</div>
+    <div class="object" style="right:4%;top:12%;font-size:45px" onclick="toast('mera penguuuu 🥹❤️')">🐧</div>
+    <div style="position:absolute;top:5%;left:50%;transform:translateX(-50%);text-align:center;width:90%">
+      <div class="kicker">chapter 01</div><h1 style="font-size:clamp(32px,6vw,70px);margin:8px">WELCOME HOME, BEBUUU</h1>
+      <p style="opacity:.7">room me sab cheeze touch kar. koi na koi dukkarr zaroor milega.</p>
+    </div>
+  </div>
+</div>
+
+<div id="s2" class="scene">
+ <div class="score">😭 happy tears caught: <b id="tearScore">0</b>/12</div>
+ <div class="gameTitle"><div class="kicker">chapter 02</div><h1>PAKAD MERI HAPPY TEARS 😭❤️</h1><p>12 tears catch kar… warna sabko bata dunga tu galeech h.</p></div>
+ <div id="tearArena" class="tearArena"></div>
+</div>
+
+<div id="s3" class="scene">
+ <div class="rollerText"><div class="kicker">chapter 03</div><h1>MEMORY ROLLERCOASTER 🎢</h1><p id="rollerCopy">hold BOOST and dekh kaha le jaata h ye dukkarr.</p></div>
+ <div class="track"></div><div id="cart" class="cart">🐱💗</div>
+ <button class="cta boost" onmousedown="boost()" ontouchstart="boost()">HOLD TO BOOST 🚀</button>
+</div>
+
+<div id="s4" class="scene">
+ <div class="score">🍜 food caught: <b id="foodScore">0</b>/10</div>
+ <div class="gameTitle"><div class="kicker">chapter 04</div><h1>FEED YOUR BUBBUUU</h1><p>screen pe tap karke cat ko move kar. khana miss mat kar 😭</p></div>
+ <div id="foodArena" class="foodArena"></div><div id="foodCat" class="foodCat">🐱</div>
+ <div class="moveHint">← tap left side / right side →</div>
+</div>
+
+<div id="s5" class="scene">
+ <div class="center">
+  <div class="letter">
+   <div class="kicker">just a little thank you</div>
+   <h1>Thank you, Bebuuu. ❤️</h1>
+
+   <p>Honestly, mujhe samajh hi nahi aa raha ki kaise thank you bolu.</p>
+
+   <p>Tune mere Boyfriend Day ke liye jo website banayi na… itni cute thi ki main genuinely emotional ho gaya. 😭❤️</p>
+
+   <p>Sirf website nahi thi woh. Usme tera time tha, tera effort tha, tera pyaar tha — aur sabse zyada woh feeling thi ki <b>meri bebuuu ne mere liye itna kuch socha.</b></p>
+
+   <p>Har choti cheez dekh ke smile aa rahi thi. Aur phir ek point pe bas aankhon me aansu aa gaye. Happy wale. 🥹</p>
+
+   <p>Thank you for making me feel this special.<br>
+   Thank you for always trying to make me smile.<br>
+   Thank you for taking care of your Bubbuuu.<br>
+   Aur thank you… bas <b>meri bebuuu</b> hone ke liye. ❤️</p>
+
+   <p>Mujhe perfect words nahi chahiye. Mujhe bas tu chahiye — aisi hi pagal, cute, irritating, galeech aur pyaari. 😭😂❤️</p>
+
+   <p>Jo website tune mere liye banayi, main shayad usse kabhi properly explain nahi kar paunga ki usne mujhe kitna happy kiya.</p>
+
+   <p>But I hope ye chhoti si website tujhe ek cheez samjha de:</p>
+
+   <p style="font-size:24px"><b>TERA BUBBUUU BHI TUJHE BOHOTTTT PYAAR KARTA H. ❤️</b></p>
+
+   <p>Hu tane ghanooo prem karu chu ❤️<br>
+   Tu mari life ma ghani j special che.<br>
+   Tari sathe rehvu, tari sathe masti karvi ane tane khush jovu — mane aa badhu ghanu game che. 🫶🏻<br>
+   Bas aavi j rite hamesha mari bebuuu bani ne rehje, okay? ❤️</p>
+
+   <p style="font-size:23px"><b>I love youuu bebuuu, ghanooo ghanooo ghanooo. 😭❤️</b></p>
+
+   <p class="sign">— Taro Bubbuuu, taro Chidkokluuu 🫶🏻</p>
+
+   <button class="cta" onclick="go(6)">ONE MORE THING ❤️</button>
+  </div>
+ </div>
+</div>
+
+<div id="s6" class="scene">
+ <div class="memoryCloud" id="memoryCloud"></div>
+ <div style="position:absolute;top:6%;left:50%;transform:translateX(-50%);text-align:center;width:90%;z-index:40">
+  <div class="kicker">chapter 06</div><h1>OUR LITTLE EVIDENCE 🥹</h1><p>double tap a memory.</p>
+ </div>
+ <button class="cta" style="position:absolute;bottom:6%;left:50%;transform:translateX(-50%);z-index:50" onclick="go(7)">ONE LAST THING ❤️</button>
+</div>
+
+<div id="s7" class="scene">
+ <div class="hugWrap">
+   <div class="kicker">final chapter</div>
+   <div class="hugChars" id="hugChars">🐱 🥹 🐧</div>
+   <h1 style="font-size:clamp(36px,7vw,76px)">THANK YOU, BEBUUU.</h1>
+   <p style="font-size:20px;opacity:.75">for making your Bubbuuu cry happy tears.</p>
+   <button class="cta pulse" onclick="hug()">🫂 GIVE BUBBUUU A HUG</button><br><button class="cta" style="margin-top:12px" onclick="openSurprise()">🎁 WAIT… SECRET SURPRISE</button>
+ </div>
+</div>
+
+<div id="surpriseOverlay">
+  <div class="surpriseCard">
+    <div class="surpriseEmoji">🐱 🫶🏻 🐧</div>
+    <div class="kicker">secret surprise unlocked</div>
+    <h2>OI BEBUUU 😭❤️</h2>
+    <p>Tu website bana ke mereko rulaegi… aur phir expect karegi ki tera Bubbuuu normal rahega? 😭😂</p>
+    <p class="secretLine">YEH CHHOTU SA SURPRISE SIRF TERE LIYE. 🥹💗</p>
+    <p>Ab idhar aa… ek virtual sa <b>choomuda + tight hug</b> le ja. 🫂💋</p>
+    <button class="cta" onclick="closeSurprise()">🥹 OKAY BUBBUUU ❤️</button>
+  </div>
+</div>
+<div id="toast"></div>
+<audio id="song" preload="auto"></audio>
+<script>
+const scenes=[...document.querySelectorAll('.scene')]; let current=0;
+const audio=document.getElementById('song');
+const audioSrc='assets/TuChahiye.mp3';
+let soundOn=true, started=false;
+function go(i){scenes[current].classList.remove('active');current=i;scenes[current].classList.add('active'); if(i===2) startTears(); if(i===6) buildMemories(); if(i===3) resetRide(); }
+function toast(t){const x=document.getElementById('toast');x.textContent=t;x.classList.add('on');clearTimeout(window.tt);window.tt=setTimeout(()=>x.classList.remove('on'),2400)}
+function startVerse(){
+ started=true; document.getElementById('cat').classList.add('shake');
+ audio.src=audioSrc; audio.addEventListener('loadedmetadata',()=>{audio.currentTime=Math.min(15,Math.max(0,audio.duration-0.2))},{once:true}); audio.currentTime=15; if(soundOn) audio.play().catch(()=>{});
+ setTimeout(()=>go(1),900);
+}
+window.addEventListener('load',()=>setTimeout(()=>document.getElementById('introText').classList.add('show'),600));
+document.getElementById('sound').onclick=()=>{soundOn=!soundOn;document.getElementById('sound').textContent=soundOn?'🔊':'🔇'; if(!soundOn) audio.pause(); else if(started) audio.play().catch(()=>{})};
+
+function startTears(){
+ const arena=document.getElementById('tearArena'); arena.innerHTML=''; let score=0;
+ const loop=setInterval(()=>{
+   if(current!==2){clearInterval(loop);return}
+   const e=document.createElement('div');e.className='tear';e.textContent=Math.random()>.35?'💧':'😭';
+   e.style.left=(4+Math.random()*92)+'vw';e.style.animationDuration=(2.8+Math.random()*2.2)+'s';
+   e.onclick=()=>{score++;document.getElementById('tearScore').textContent=score;e.remove(); if(score>=12){clearInterval(loop);toast('HURAYYYY 😭❤️ happy tears bach gayi dukkarr');setTimeout(()=>go(3),1600)}};
+   arena.appendChild(e);setTimeout(()=>e.remove(),6000);
+ },500);
+}
+function resetRide(){document.getElementById('cart').style.left='8%';document.getElementById('rollerCopy').textContent='hold BOOST and dekh kaha le jaata h ye dukkarr.'}
+let boosted=false;
+function boost(){
+ if(boosted)return; boosted=true; const c=document.getElementById('cart'); c.style.left='82%';document.getElementById('s3').classList.add('shake');
+ const texts=['Seawoods 😭','ISKCON ❤️','Pune → Mumbai','meri bebuuu 🥹','HOLD ONNNN','MY FAVOURITE SEAT ❤️'];
+ let i=0; const it=setInterval(()=>{document.getElementById('rollerCopy').textContent=texts[i++%texts.length]},550);
+ setTimeout(()=>{clearInterval(it);toast('AAAAAAAHHHHH BEBUUU 😭🎢❤️');setTimeout(()=>go(4),1300)},3000);
+}
+function spawnFood(){
+ let score=0; const arena=document.getElementById('foodArena');arena.innerHTML='';
+ const foods=['🍕','🍔','🍟','🍜','🍰','🍫','🥟','🍛']; 
+ function drop(){if(current!==4)return;const e=document.createElement('div');e.className='foodItem';e.textContent=foods[Math.floor(Math.random()*foods.length)];e.style.left=(5+Math.random()*90)+'vw';e.style.setProperty('--dur',(2.2+Math.random()*2)+'s');e.onclick=()=>{score++;document.getElementById('foodScore').textContent=score;e.remove();toast(score>=10?'AATMA KHUSHHHH 😭❤️':'nom nom dukkarr');if(score>=10)setTimeout(()=>go(5),1000)};arena.appendChild(e);setTimeout(()=>e.remove(),5000)}
+ const loop=setInterval(()=>{if(current!==4){clearInterval(loop);return}drop()},650);
+}
+document.getElementById('s4').addEventListener('pointerdown',e=>{const cat=document.getElementById('foodCat');cat.style.left=(e.clientX/window.innerWidth*100)+'%'}); 
+function buildMemories(){
+ const cloud=document.getElementById('memoryCloud');cloud.innerHTML='';
+ const files=["memory1.jpeg", "memory2.jpeg", "memory3.jpeg", "memory4.jpeg", "memory5.jpeg", "memory6.jpeg", "memory7.jpeg", "memory8.jpeg", "memory9.jpeg"];
+ const captions=['mera choomuda 🥹❤️','yeh hamesha karuga seva teri','mera laal pandit 😭❤️','this memory = forever','meri bebuuu 🫶🏻','us moment ka sukoon','pyaari dukkarr','one more reason to smile','Bubbuuu × Bebuuu'];
+ files.forEach((f,i)=>{const d=document.createElement('div');d.className='mem';d.style.left=(5+Math.random()*78)+'vw';d.style.top=(18+Math.random()*62)+'vh';d.style.setProperty('--r',(Math.random()*14-7)+'deg');d.innerHTML='<img src="assets/'+f+'"><span>'+captions[i%captions.length]+'</span>';let clicks=0;d.ondblclick=()=>{clicks++;toast(clicks%2?'maa kasam ye memory meri favourite h 😭❤️':'isko dekh ke aatma khush ho jati h 🥹')};cloud.appendChild(d)})
+}
+function hug(){
+ const h=document.getElementById('hugChars');h.classList.add('hug');toast('AAJA DUKKARR 🫂❤️');
+ for(let i=0;i<90;i++){const c=document.createElement('div');c.className='conf';c.textContent=['❤️','💗','✨','🫶🏻','💫'][Math.floor(Math.random()*5)];c.style.left=Math.random()*100+'vw';c.style.top=(-5-Math.random()*20)+'vh';c.style.animationDelay=Math.random()*1.5+'s';document.getElementById('s7').appendChild(c)}
+ setTimeout(()=>toast('I LOVE YOUUU BEBUUU 😭❤️'),1800)
+}
+
+function openSurprise(){
+  const o=document.getElementById('surpriseOverlay'); o.classList.add('show');
+  for(let i=0;i<28;i++){
+    const h=document.createElement('div'); h.className='miniHeart';
+    h.textContent=['❤️','💗','🫶🏻','✨','💖'][Math.floor(Math.random()*5)];
+    h.style.left=Math.random()*100+'vw'; h.style.top=(80+Math.random()*25)+'vh';
+    h.style.animationDelay=Math.random()*1.2+'s'; o.appendChild(h);
+  }
+  if(soundOn && started) audio.play().catch(()=>{});
+}
+function closeSurprise(){
+  document.getElementById('surpriseOverlay').classList.remove('show');
+}
+</script>
+</body>
+</html>
